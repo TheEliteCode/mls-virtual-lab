@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLS Virtual Lab | Simulations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header class="header">
+    <h1 class="logo">MLS Virtual Lab</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#features">Features</a>
+      <a href="#">Contact</a>
+      <a href="lab.html">Lab</a>
+      <a href="simulations.html">Simulations</a>
+    </nav>
+  </header>
+
+  <section class="simulations">
+    <h1>Virtual Lab Simulations</h1>
+    <p>Choose a simulation to begin:</p>
+
+    <div class="simulation-grid">
+      <div class="sim-card">
+        <h2>Complete Blood Count (CBC)</h2>
+        <button class="launch-btn">Launch</button>
+      </div>
+
+      <div class="sim-card">
+        <h2>Urinalysis</h2>
+        <a href="simulation-urine.html"><button class="launch-btn">Launch</button></a>
+      </div>
+
+      <div class="sim-card">
+        <h2>Biochemistry Analysis</h2>
+        <button class="launch-btn">Launch</button>
+      </div>
+
+      <div class="sim-card">
+        <h2>Microscopy</h2>
+        <button class="launch-btn">Launch</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MLS Virtual Lab. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Simulation Modal Template -->
+<div id="simulation-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="sim-title">Simulation Title</h2>
+    <p>This is a preview area for the selected simulation.</p>
+    <button onclick="alert('Simulation loading...')">Start Simulation</button>
+  </div>
+</div>
+</body>
+</html>

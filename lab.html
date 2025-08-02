@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Lab - MLS Virtual Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+
+
+  <header class="header">
+    <div class="logo">MLS Virtual Lab</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lab.html">Lab</a>
+      <a href="progress.html">Student Progress</a>
+    </nav>
+  </header>
+ 
+  <section class="hero">
+    <h2>Welcome to the Virtual Lab</h2>
+    <p>Explore lab procedures, simulations, and learning tools to enhance your skills.</p>
+  </section>
+  <section class="lab-grid">
+    <div class="lab-module">
+      <h3>🧬 Hematology Simulation</h3>
+      <p>Learn how to run a full blood count, prepare blood smears, and analyze results.</p>
+      <button class="launch-btn" onclick="launchModule('hematology')">Launch</button>
+    </div>
+
+    <div class="lab-module">
+      <h3>🔬 Microscopy Practice</h3>
+      <p>Get hands-on with digital slides: identify parasites, cells, and abnormalities.</p>
+      <button class="launch-btn" onclick="launchModule('microscopy')">Launch</button>
+    </div>
+
+    <div class="lab-module">
+      <h3>🧪 Clinical Chemistry</h3>
+      <p>Understand analyzers, run tests for glucose, urea, enzymes, and more.</p>
+      <button class="launch-btn" onclick="launchModule('chemistry')">Launch</button>
+    </div>
+
+    <div class="lab-module">
+      <h3>🧫 Microbiology</h3>
+      <p>Simulate culture procedures, Gram staining, and antibiotic sensitivity tests.</p>
+      <button class="launch-btn" onclick="launchModule('microbiology')">Launch</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 MLS Virtual Lab. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Modal Container -->
+  <div id="labModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Module Title</h2>
+    <p id="modalDescription">Module description will appear here.</p>
+    <div class="modal-media">
+      <p><em>Media content goes here (image/video/interactive tool)</em></p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f6f1;
+  color: #333;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #b15e29;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-color: #f1e1d0;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #222;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #b15e29;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #944e21;
+}
+
+/* Why section */
+.why {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff8ee;
+}
+
+.why h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-preview {
+  background-color: #fefaf6;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.features-preview h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: #b15e29;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* MODAL STYLING */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fff8f1;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-button {
+  color: #444;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ff4c4c;
+}
+
+.contact-form {
+  background: #fff3e6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4d2600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #cc6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #b35900;
+}
+
+.admin-container {
+  padding: 30px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.admin-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-card h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.admin-card button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-card button:hover {
+  background-color: #001f33;
+}
+
+.simulation-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #fffdf5;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+}
+
+.simulation-container h1 {
+  color: #5a3825;
+  margin-bottom: 10px;
+}
+
+.simulation-container p {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-area label {
+  font-weight: bold;
+  color: #4a2c1a;
+}
+
+.form-area select,
+.form-area input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-area button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #804000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-area button:hover {
+  background-color: #b2601c;
+}
+
+.result-area {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff2e0;
+  border-radius: 10px;
+  color: #333;
+  min-height: 60px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+}
+
+.launch-btn {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 119, 204, 0.2);
+}
+
+.launch-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.launch-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 119, 204, 0.2);
+}
+

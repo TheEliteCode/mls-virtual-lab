@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urine Test Simulation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2>MLS Virtual Lab</h2>
+   <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#features">Features</a>
+      <a href="#">Contact</a>
+      <a href="lab.html">Lab</a>
+      <a href="simulations.html">Simulations</a>
+    </nav>
+  </header>
+
+  <section class="simulation-container">
+    <h1>Urine Test Simulation</h1>
+    <p>Fill in the sample data and run the test to see simulated results.</p>
+
+    <div class="form-area">
+      <label>Color:
+        <select id="color">
+          <option value="clear">Clear</option>
+          <option value="yellow">Yellow</option>
+          <option value="dark">Dark Yellow</option>
+        </select>
+      </label>
+
+      <label>pH:
+        <input type="number" id="ph" min="4" max="9" placeholder="Enter pH value (4–9)" />
+      </label>
+
+      <label>Glucose Level:
+        <select id="glucose">
+          <option value="negative">Negative</option>
+          <option value="trace">Trace</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+
+      <button onclick="runSimulation()">Run Test</button>
+    </div>
+
+    <div class="result-area" id="result">
+      <!-- Simulated results appear here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>MLS Virtual Lab &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

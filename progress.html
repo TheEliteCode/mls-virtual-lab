@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Progress</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fb;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .dashboard {
+      margin-top: 30px;
+    }
+
+    .module {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 6px solid #3b82f6;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .module h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .progress-bar {
+      background-color: #e5e7eb;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #10b981;
+      width: 0%;
+      transition: width 0.5s;
+    }
+
+    .badges {
+      margin-top: 30px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .badges h2 {
+      font-size: 20px;
+    }
+
+    .badge-grid {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .badge {
+      background-color: #fef9c3;
+      color: #92400e;
+      border: 2px dashed #facc15;
+      padding: 10px 15px;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👩‍⚕️ Student Progress Dashboard</h1>
+    <p>Welcome back, Lab Cadet!</p>
+  </header>
+
+  <div class="dashboard">
+    
+    <div class="module">
+      <h2>🔬 Urinalysis Module</h2>
+      <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      <p>80% completed</p>
+    </div>
+
+    <div class="module">
+      <h2>🧪 Hematology Module</h2>
+      <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+      <p>50% completed</p>
+    </div>
+
+    <div class="module">
+      <h2>🦠 Microbiology Module</h2>
+      <div class="progress-bar"><div class="progress" style="width: 0%; background-color: #f87171;"></div></div>
+      <p>Not started</p>
+    </div>
+
+    <div class="badges">
+      <h2>🏅 Achievements</h2>
+      <div class="badge-grid">
+        <div class="badge">💯 Urinalysis Master</div>
+        <div class="badge">🔥 Streak: 5 Days</div>
+        <div class="badge">🚀 Fast Starter</div>
+        <div class="badge">🔓 First Module Unlocked</div>
+      </div>
+    </div>
+
+    <a class="nav-link" href="index.html">← Back to Home</a>
+
+  </div>
+
+</body>
+</html>
